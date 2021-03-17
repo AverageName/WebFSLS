@@ -1,0 +1,26 @@
+.draw {
+  max-width: 800px;
+}
+
+.draw__desk {
+  max-width: 800px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.draw__image {
+  max-width: 800px;
+}
+
+.draw__canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+}
+
+.draw__slider {
+  margin: 20px 0;
+}

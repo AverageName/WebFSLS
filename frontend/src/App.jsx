@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState, useRef } from "react";
 import { sendVideo } from "./middleware";
+import { DrawDesk } from "./components/DrawDesk/DrawDesk";
 
 function App() {
   const videoRef = useRef(null);
@@ -46,6 +47,8 @@ function App() {
 
       <video ref={videoRef} className="video" type="video/mp4" />
       {isVideoLoaded && <button onClick={toggleVideo}>{isVideoPlaying ? "Pause" : "Play"}</button>}
+
+      <DrawDesk />
     </div>
   );
 }
